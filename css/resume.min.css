@@ -54,6 +54,11 @@ body {
   .list-icons {
     font-size: 3rem;
   }
+
+  .list-icons .list-inline-item{
+    width: 60px;
+    height: 60px;
+  }
   
   .list-icons .list-inline-item i:hover {
     color: #2579f7;
@@ -119,6 +124,13 @@ body {
   section.resume-section .resume-item .resume-date {
     min-width: none;
   }
+
+  section.resume-section .resume-item img {
+    height: 400px;
+    width: 600px;
+    object-fit: fill;
+    margin-top: 5px;
+  }
   
   @media (min-width: 768px) {
     section.resume-section {
@@ -128,6 +140,17 @@ body {
     section.resume-section .resume-item .resume-date {
       min-width: 18rem;
     }
+
+   
+  }
+
+  @media(max-width: 600px){
+    section.resume-section .resume-item img {
+        height: 18rem;
+        width: 21rem;
+        object-fit: fill;
+        margin-top: 5px;
+      }
   }
   
   @media (min-width: 992px) {
@@ -142,7 +165,7 @@ body {
   }
   
   .text-primary {
-    color: #030303 !important;
+    color: #3c77f5 !important;
   }
   
   a {
